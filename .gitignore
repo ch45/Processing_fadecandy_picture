@@ -1,0 +1,10 @@
+*.orig
+* - Copy.pde
+*.zip
+discards*
+_*
+~$*
+*.autosave
+data/*
+!data/ring.png
+*~
