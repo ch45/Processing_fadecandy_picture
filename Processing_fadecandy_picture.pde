@@ -62,10 +62,10 @@ void draw()
   translate(width / 2, height / 2);
   beginShape();
   texture(img);
-  vertex(-img.width / 2, -img.height / 2, z1, 0,     0);
-  vertex( img.width / 2, -img.height / 2, z2, width, 0);
-  vertex( img.width / 2,  img.height / 2, z3, width, height);
-  vertex(-img.width / 2,  img.height / 2, z4, 0,     height);
+  vertex(-img.width / 2 + z1, -img.height / 2 + z1, z1, 0,     0);
+  vertex( img.width / 2 + z2, -img.height / 2 + z2, z2, width, 0);
+  vertex( img.width / 2 + z3,  img.height / 2 + z3, z3, width, height);
+  vertex(-img.width / 2 + z4,  img.height / 2 + z4, z4, 0,     height);
   endShape();
 
   check_exit();
